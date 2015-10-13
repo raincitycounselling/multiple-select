@@ -73,9 +73,12 @@
             if (this.options.selectAll && !this.options.single) {
                 ul.append(
                     '<li class="ms-select-all">' +
-                    '<label>' +
+                    '<label class="checkbox-container">' +
+                    '<div class="tiny switch radius">' +
                     '<input type="checkbox" ' + this.selectAllName + ' /> ' +
-                    this.options.selectAllDelimiter[0] + this.options.selectAllText + this.options.selectAllDelimiter[1] +
+                    '<label></label>' +
+                    '<span>' + this.options.selectAllDelimiter[0] + this.options.selectAllText + this.options.selectAllDelimiter[1] + '</span>' +
+                    '</div>' +
                     '</label>' +
                     '</li>'
                 );
@@ -138,16 +141,20 @@
                 } else {
                     var li = $(
                         '<li' + clss + style + '>' +
-                        '<label' + (disabled ? ' class="disabled"' : '') + '>' +
+                        '<label' + (disabled ? ' class="disabled checkbox-container"' : ' class="checkbox-container"') + '>' +
+                        '<div class="tiny switch radius">' +
                         '<input type="' + type + '" ' + this.selectItemName +
                             (selected ? ' checked="checked"' : '') +
                             (disabled ? ' disabled="disabled"' : '') +
                             (group ? ' data-group="' + group + '"' : '') +
                             '/> ' +
+                        '<label></label>' +
+                        '<span></span>' +
+                        '</div>' +
                         '</label>' +
                         '</li>');
                     li.find('input').val(value);
-                    li.find('label').append(document.createTextNode(text));
+                    li.find('.switch span').append(document.createTextNode(text));
                     return li;
                 }
             } else if (!group && $elm.is('optgroup')) {
