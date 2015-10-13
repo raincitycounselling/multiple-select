@@ -27,7 +27,7 @@
             return attValue ? (' ' + att + '="' + attValue + '"') : '';
         }).join('') + ' />');
         this.$choice = $('<button type="button" class="ms-choice"><span class="placeholder">' +
-            options.placeholder + '</span><div></div></button>');
+            options.placeholder + '</span><div><i class="fa"></i></div></button>');
         this.$drop = $('<div class="ms-drop ' + options.position + '"></div>');
         this.$el.after(this.$parent);
         this.$parent.append(this.$choice);
