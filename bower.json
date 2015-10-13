@@ -1,16 +1,17 @@
 {
-  "name": "multiple-select",
+  "name": "multiple-select-foundation",
   "version": "1.1.1",
-  "homepage": "https://github.com/wenzhixin/multiple-select",
+  "homepage": "https://github.com/raincitycounselling/multiple-select",
   "authors": [
-    "文翼 <wenzhixin2010@gmail.com>"
+    "文翼 <wenzhixin2010@gmail.com>",
+    "Mike Marich"
   ],
   "main" : [
     "multiple-select.css",
     "multiple-select.png",
     "jquery.multiple.select.js"
   ],
-  "description": "A jQuery plugin to select multiple elements with checkboxes",
+  "description": "A jQuery plugin to select multiple elements with foundation switches",
   "license": "MIT",
   "dependencies": {
     "jquery": "1.7.x"
