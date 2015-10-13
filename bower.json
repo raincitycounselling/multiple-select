@@ -1,5 +1,5 @@
 {
-  "name": "multiple-select-foundation",
+  "name": "multiple-select-f5-switch",
   "version": "1.1.1",
   "homepage": "https://github.com/raincitycounselling/multiple-select",
   "authors": [
@@ -7,9 +7,9 @@
     "Mike Marich"
   ],
   "main" : [
-    "multiple-select.css",
-    "multiple-select.png",
-    "jquery.multiple.select.js"
+    "./multiple-select.css",
+    "./multiple-select.png",
+    "./jquery.multiple.select.js"
   ],
   "description": "A jQuery plugin to select multiple elements with foundation switches",
   "license": "MIT",
